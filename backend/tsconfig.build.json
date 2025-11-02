@@ -1,0 +1,36 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "./dist",
+    /* === Module System === */
+    "target": "es2022",
+    "lib": ["es2022"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "verbatimModuleSyntax": true,
+    /* === Compatibilité Node ESM === */
+    "types": ["node"],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    /* === Compilation === */
+    "noEmit": false,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    /* === Sécurité et style === */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noImplicitOverride": true,
+    "noUncheckedSideEffectImports": true,
+    "noImplicitAny": true,
+    /* Build artifacts */
+    "allowImportingTsExtensions": false,
+    "declaration": false,
+    "declarationMap": false
+  },
+  "include": ["src/**/*", "db/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
