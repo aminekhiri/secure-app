@@ -76,7 +76,7 @@ services:
     depends_on:
       - db
     ports:
-      - "8081:8080" # http://localhost:8081
+      - "8081:8080" # http://localhost:8081 
     environment:
       - ADMINER_DEFAULT_SERVER=db
     networks:
