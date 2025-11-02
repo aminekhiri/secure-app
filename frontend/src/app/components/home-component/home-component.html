@@ -1,0 +1,6 @@
+@if(authService.isLoggedIn()) {
+    <h1>Welcome {{ authService.currentUser()?.login }} to the Home Component</h1>
+    <button class="logout" (click)="logout()">Logout</button>
+} @else {
+    <h1>Not logged In</h1>
+}

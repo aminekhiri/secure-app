@@ -1,0 +1,24 @@
+<form (ngSubmit)="onSubmit(loginInput.value, passwordInput.value)">
+    <div>
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login" #loginInput required />
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" #passwordInput required />
+    </div>
+    <button type="submit">Login</button>
+    <!-- <div [hidden]="!authService.isLoading()">
+        Loading...
+    </div> -->
+    @if (authService.isLoading()) {
+        <div class="loading-message">
+            Chargement...
+        </div>
+    }
+    @if (authService.error()) {
+        <div class="error-message">
+            Erreur de connexion : {{ authService.error() }}
+        </div>
+    }
+</form>

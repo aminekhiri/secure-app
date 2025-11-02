@@ -1,0 +1,21 @@
+.nav-bar{
+    background-color: #eea6a6;
+    overflow: hidden;
+}
+
+.nav-bar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+
+
+}
+
+.nav-bar a:hover {
+    background-color: #ddd;
+    color: black;
+}

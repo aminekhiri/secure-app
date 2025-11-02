@@ -1,0 +1,10 @@
+
+<div class="user-list">
+    @for (user of users(); track user.id) {
+        <div class="user">
+            <p>ID: {{ user.id }}</p>
+            <p>Username: {{ user.login }}</p>
+            <p>Role: {{ user.role }}</p>
+        </div>
+    }
+</div>
